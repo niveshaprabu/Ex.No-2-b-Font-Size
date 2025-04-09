@@ -44,15 +44,16 @@ Step 6:Close the Android project.
  ```
 /*
 Program to Develop an application that uses Font Size using Android Studio .
-Developed by: NIVESHA.P
+Developed by: NIVESHA P
 RegisterNumber:  212222040108
+*/
 ```
 
 ## MainActivity.java:
 ```
-package com.example.demo;
+package com.example.exp_2;
 
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.graphics.Color;
@@ -70,7 +71,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         final TextView t= (TextView) findViewById(R.id.textView);
         Button b1= (Button) findViewById(R.id.button1);
-        b1.setOnClickListener(new View.OnClickListener() { 
+        b1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 t.setTextSize(font);
@@ -116,7 +117,6 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-
 ## activity_main.xml:
 ```
 <?xml version="1.0" encoding="utf-8"?>
@@ -144,18 +144,25 @@ public class MainActivity extends AppCompatActivity {
         android:text="Change font size"
         android:textSize="25sp" />
     <Button
-        android:id="@+id/button2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="20dp"
-        android:gravity="center"
-        android:text="Change color"
-        android:textSize="25sp" />
-</LinearLayout>
+    android:id="@+id/button2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp"
+    android:gravity="center"
+    android:text="Change color"
+    android:textSize="25sp" />
+    </LinearLayout>
 ```
 ## Output:
-![image](https://github.com/user-attachments/assets/af681056-6600-4e47-b8ae-bd49d5fec9f2)
-![image](https://github.com/user-attachments/assets/33294619-db6d-45fc-9d04-d0543fde8d57)
+![image](https://github.com/user-attachments/assets/7c961276-d63a-45d1-984c-39318b509950)
+
+
+![image](https://github.com/user-attachments/assets/4c29f95d-39e1-4498-8c14-bcf82d761768)
+
+
+![image](https://github.com/user-attachments/assets/60108913-a3e4-4777-b64c-f70534c2cbc0)
+
+
 
 ## Result:
 Thus, the program for android application, Font Size and color was executed successfully using Android Studio.
